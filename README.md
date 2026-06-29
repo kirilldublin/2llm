@@ -9,7 +9,7 @@
   асинхронно через очередь.
 
 Telegram-бот ничего не знает о пользователях, паролях и регистрации. Он только
-**проверяет** JWT, выданный Auth Service (общий секрет, алгоритм HS256).
+**проверяет** JWT, выданный Auth Service.
 
 ## Архитектура
 
@@ -150,8 +150,6 @@ cd bot_service  && uv run pytest -q   # 9 passed
 
 ## Скриншоты работы
 
-> Email при регистрации оформлен как `surname@email.com`.
-> Файлы лежат в каталоге [`docs/`](docs/).
 
 ### 1. Swagger Auth Service (register, login, /auth/me)
 
