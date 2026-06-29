@@ -91,8 +91,6 @@ cp bot_service/.env.example  bot_service/.env
 docker compose up --build
 ```
 
-> Файлы `.env` намеренно не хранятся в репозитории (см. `.gitignore`), чтобы
-> секреты не попадали на GitHub. В репозитории лежат только `.env.example`.
 
 Поднимаются: `rabbitmq` (UI на http://localhost:15672, guest/guest),
 `redis`, `auth` (:8000), `bot` (polling) и `worker` (Celery).
